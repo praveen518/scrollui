@@ -1,0 +1,102 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.section-container {
+    height: 200vh;
+}
+
+.section-one {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 400vh;
+    scroll-snap-type: y mandatory;
+}
+
+.section-one p {
+    opacity: 0;
+}
+
+.sticky {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    opacity: 1 !important;
+}
+
+.section-two {
+    height: 150vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-two p {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.section-above {
+    height: 100vh;
+}
+
+.card {
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    border: 1px solid gray;
+    transition: all 1ms;
+    scroll-snap-align: start;
+    border-radius: 10px;
+}
+
+.card-container {
+    width: 600px;
+    height: 400px;
+}
+
+.position {
+    position: absolute;
+    top: calc(100vh/2 - 200px);
+}
+
+.modified-position {
+    position: fixed;
+    top: calc(100vh/2 - 200px);
+}
+
+.pink {
+    background-color: pink;
+    top: 20px;
+    z-index: 5;
+}
+
+.blue {
+    background-color: blue;
+    top: 40px;
+    z-index: 4;
+}
+
+.red {
+    background-color: red;
+    top: 60px;
+    z-index: 3;
+}
+
+.yellow {
+    background-color: yellow;
+    top: 80px;
+    z-index: 2;
+}
+
+.content-div {
+    height: 200px;
+    width: 300px;
+}
+
+.position-content-modified {
+    position: fixed;
+    top: calc(100vh/2 - 100px);
+}
